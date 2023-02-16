@@ -1,1 +1,25 @@
 /* Add custom styles here */
+#logo{
+    width: 200px;
+    height: 50px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.footer{
+    background-color: crimson;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    color: white;
+    justify-content:space-around;
+}
+.footer img{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
