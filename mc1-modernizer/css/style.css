@@ -1,25 +1,28 @@
 /* Add custom styles here */
+body{
+    font-family: sans-serif;
+}
 #logo{
     width: 200px;
     height: 50px;
     padding: 0%;
-    margin: 0%;
+    margin-left : 10px;
+    margin-right : 100px;
+}
+#git-img{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+}
+#header1{
+    font-size: 50px;
+    font-weight: bold;
+}
+#header2{
+    font-size: 20px;
+    color: grey;
 }
 
-.footer{
-    background-color: crimson;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    color: white;
-    justify-content:space-around;
-}
-.footer img{
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-}
-.footer a{
-    text-decoration: none;
-    color: white;
+#header3,#header4{
+    font-size: 30px;
 }

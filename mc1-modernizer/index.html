@@ -6,61 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Modernizr</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
 </head>
 
-<body>   
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"> 
-            <img src="./assets/logo.svg" alt="logo" id="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active ">
-              <a class="nav-link" href="#"> DOWNLOAD </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"> DOCUMENTATION </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"> NEWS </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"> RESOURCES </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-    <main class="container-fluid m-2">
-        <div>
-            <h2 class="row">
+<body class="container-fluid">
+    <header class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.svg" alt="logo" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active me-5">
+                        <a class="nav-link" href="#"> DOWNLOAD </a>
+                    </li>
+                    <li class="nav-item active me-5">
+                        <a class="nav-link" href="#"> DOCUMENTATION </a>
+                    </li>
+                    <li class="nav-item active me-5">
+                        <a class="nav-link" href="#"> NEWS </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> RESOURCES </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="row mt-2">
+        <div class="row mt-2 mb-2">
+            <h2 class="mt-3 mb-3 p-2" id="header1">
                 Respond to
                 <span>your user’s</span> browser features.
             </h2>
-            <h4>Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer.
+            <h4 class=" mt-3 mb-3 p-2" id="header2">Modernizr tells you what HTML, CSS and JavaScript features the
+                user’s browser has to offer.
             </h4>
-            <div>
-                <button>Add your defects</button>
-                <button>Development Build</button>
+            <div class="mt-3 mb-3 p-3">
+                <button class="pt-1 pb-1 pe-2 ps-2 me-2 border border-danger bg-danger text-light">Add your
+                    defects</button>
+                <button class="pt-1 pb-1 pe-2 ps-2 border border-dark bg-light text-dark">Development Build</button>
             </div>
         </div>
 
-        <div>
-            <div>
+        <div class="row">
+            <div class="col">
                 <div>
                     <div>
-                        <h3>What is Modernizr?</h3>
+                        <h3 id="header3">What is Modernizr?</h3>
                         <p>It’s a collection of superfast tests – or “detects” as we like to call them – which run as
                             your web page loads, then you can use the results to tailor the experience to the user.</p>
                     </div>
                     <div>
-                        <h3>Why do I need it?</h3>
+                        <h3 id="header4">Why do I need it?</h3>
                         <p>All web developers come up against differences between browsers and devices. That’s largely
                             due to different feature sets: the latest versions of the popular browsers can do some
                             awesome things which older browsers can’t – but
@@ -71,30 +76,31 @@
                         </p>
                     </div>
                 </div>
-
-                <div>
-                    <div>
-                        <div>
-                            <h4>Get Started</h4>
-                            <hr />
-                            <ul>
-                                <li>Modernizr explained </li>
-                                <li>What is feature detection? </li>
-                                <li>Using Modernizr with JavaScript </li>
-                                <li>Using Modernizr with CSS </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4>Latest News</h4>
-                            <hr />
-                            <ul>
-                                <li>Modernizr 3.5.0 </li>
-                                <li>Modernizr 3.4.0 </li>
-                                <li>Modernizr 3.3.1 </li>
-                                <li>Modernizr 3.3.0 </li>
-                            </ul>
-                        </div>
-                        <div>
+            </div>
+            <div class="col-md row-sm">
+                <div class="row m-1">
+                    <div class="col-md row-sm shadow-lg p-3 mb-5 bg-white  m-1">
+                        <h4>Get Started</h4>
+                        <hr />
+                        <ul>
+                            <li>Modernizr explained </li>
+                            <li>What is feature detection? </li>
+                            <li>Using Modernizr with JavaScript </li>
+                            <li>Using Modernizr with CSS </li>
+                        </ul>
+                    </div>
+                    <div class="col-md row-sm shadow-lg p-3 mb-5 bg-white  m-1">
+                        <h4>Latest News</h4>
+                        <hr />
+                        <ul>
+                            <li>Modernizr 3.5.0 </li>
+                            <li>Modernizr 3.4.0 </li>
+                            <li>Modernizr 3.3.1 </li>
+                            <li>Modernizr 3.3.0 </li>
+                        </ul>
+                    </div>
+                    <div class="row-md m-0 p-0">
+                        <div class="col-lg-6 col-md-6 shadow-lg p-3 mb-5 bg-white  m-1">
                             <h4>Talk to us</h4>
                             <hr />
                             <ul>
@@ -111,18 +117,22 @@
 
     </main>
 
-    <footer class="footer">
-        <div>
-            <p>Made with love by Faruk,Paul,Alex,Ryan,Patrick,Stu and Richard</p>
-            <a href="#">Subscribe to the feed,</a>
-            <a href="#">follow on twitter,</a>
-            <a href="#">or Contact us.</a>
-            <a href="#">Donations are cool, too</a>
+    <footer class="row bg-danger mt-2 p-2 ">
+        <div class="col-lg-11 col-sm-8 col text-center">
+            <p class="text-light">Made with love by Faruk,Paul,Alex,Ryan,Patrick,Stu and Richard</p>
+            <a href="#" class="text-decoration-none text-light">Subscribe to the feed,</a>
+            <a href="#" class="text-decoration-none text-light">follow on twitter,</a>
+            <a href="#" class="text-decoration-none text-light">or Contact us.</a>
+            <a href="#" class="text-decoration-none text-light">Donations are cool, too</a>
         </div>
-        <div>
-            <img src=" ./assets/github.svg " alt="Github">
+        <div class="col-lg-1 col-sm-2 col">
+            <img src=" ./assets/github.svg " alt="Github" id="git-img">
         </div>
     </footer>
-    
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
 </html>
